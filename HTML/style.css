@@ -1,0 +1,62 @@
+nav {
+    border-bottom: 1px solid black;
+  }
+  
+  .crumbs ol {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .crumb {
+    display: inline-block;
+  }
+  
+  .crumb a::after {
+    display: inline-block;
+    color: #000;
+    content: ">";
+    font-size: 80%;
+    font-weight: bold;
+    padding: 0 3px;
+
+}
+
+.forecast {
+    margin: 0;
+    padding: 0.3rem;
+    background-color: #eee;
+  }
+  
+  .forecast > h1,
+  .day-forecast {
+    margin: 0.5rem;
+    padding: 0.3rem;
+    font-size: 1.2rem;
+  }
+  
+  .day-forecast {
+    background: right/contain content-box border-box no-repeat
+      url("/pictures/rain.svg") white;
+  }
+  
+  .day-forecast > h2,
+  .day-forecast > p {
+    margin: 0.2rem;
+    font-size: 1rem;
+  }
+
+aside {
+    width: 40%;
+    padding-left: 0.5rem;
+    margin-left: 0.5rem;
+    float: right;
+    box-shadow: inset 5px 0 5px -5px #29627e;
+    font-style: italic;
+    color: #29627e;
+}
+  
+aside > p {
+    margin: 0.5rem;
+}
+  
+  
