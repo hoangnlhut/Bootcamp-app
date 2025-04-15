@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Race Registration</title>
+  </head>
+  <body>
+    <h1>Race Registration</h1>
+
+    <form action="" method="get">
+      <div>
+        <label for="firstName">First Name:</label>
+        <input type="text" name="firstName" id="firstName" required />
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" name="lastName" id="lastName" />
+      </div>
+
+      <div>
+        <p>Select a Race:</p>
+        <div>
+          <input type="radio" name="distance" id="5k" value="5k" /><label
+            for="5k"
+            >Fun Run 5k</label
+          >
+        </div>
+
+        <div>
+          <input type="radio" name="distance" id="half" value="half" /><label
+            for="half"
+            >Half Marathon</label
+          >
+        </div>
+
+        <div>
+          <input type="radio" name="distance" id="full" value="full" /><label
+            for="full"
+            >Full Marathon</label
+          >
+        </div>
+      </div>
+
+      <div>
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="email" required />
+
+        <label for="password">Password: </label>
+        <input type="password" name="password" id="password" />
+      </div>
+
+      <div>
+        <label for="group">Select Age Group: </label>
+
+        <select name="group" id="group">
+          <option value="1">under 18</option>
+          <option value="2">18-30</option>
+          <option value="3">30-50</option>
+          <option value="4" selected>50+</option>
+        </select>
+      </div>
+      <button type="submit">Register!</button>
+    </form>
+
+    <!-- <h1>Forms Demo</h1>
+    <form action="/HTML/chickens.html" method="get">
+      <div>
+        <label for="userName">Name: </label>
+        <input
+          type="text"
+          name="userName"
+          id="userName"
+          placeholder="Name"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="address">Address: </label>
+        <input type="text" name="address" id="address" placeholder="Address" />
+      </div>
+
+      <fieldset>
+        <legend>Choose your hobbies:</legend>
+        <div>
+          <input type="checkbox" id="sport" name="sport" checked />
+          <label for="sport">Sport</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="music" name="music" />
+          <label for="music">Music</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Please select your preferred contact method:</legend>
+        <div>
+          <input
+            type="radio"
+            id="contactChoice1"
+            name="contact"
+            value="email"
+          />
+          <label for="contactChoice1">Email</label>
+
+          <input
+            type="radio"
+            id="contactChoice2"
+            name="contact"
+            value="phone"
+          />
+          <label for="contactChoice2">Phone</label>
+
+          <input type="radio" id="contactChoice3" name="contact" value="mail" />
+          <label for="contactChoice3">Mail</label>
+        </div>
+      </fieldset>
+
+      <div>
+        <label for="birth">Birthday: </label>
+        <input type="date" class="birth" id="birth" \ />
+      </div>
+
+      <div>
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="email" placeholder="Email" />
+      </div>
+
+      <div>
+        <label for="pass">Password: </label>
+        <input
+          type="password"
+          class="pass"
+          id="pass"
+          placeholder="Password"
+          minlength="6"
+          required
+          autocomplete="on"
+        />
+      </div>
+
+      <div>
+        <label for="product">Choose a product:</label>
+
+        <select name="product" id="product">
+          <option value="">--Please choose an option--</option>
+          <option value="dog">Dog</option>
+          <option value="cat">Cat</option>
+          <option value="hamster">Hamster</option>
+          <option value="parrot">Parrot</option>
+          <option value="spider">Spider</option>
+          <option value="goldfish">Goldfish</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="story">Tell us your story:</label>
+        <textarea id="story" name="story" rows="5" cols="33">
+It was a dark and stormy night...</textarea
+        >
+      </div>
+
+      <div>
+        <p>Audio settings:</p>
+
+        <div>
+          <input type="range" id="volume" name="volume" min="0" max="11" />
+          <label for="volume">Volume</label>
+        </div>
+
+        <div>
+          <input
+            type="range"
+            id="cowbell"
+            name="cowbell"
+            min="0"
+            max="100"
+            value="90"
+            step="10"
+          />
+          <label for="cowbell">Cowbell</label>
+        </div>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form> -->
+  </body>
+</html>
