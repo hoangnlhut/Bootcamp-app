@@ -1,0 +1,23 @@
+h2{
+    color: blueviolet;
+}
+
+button {
+  color: rgb(89,151,0);
+  background-color: rgb(27, 231, 170);
+}
+
+h1{
+    text-align: center;
+    width: 100%;
+    letter-spacing: 2px;
+    text-decoration:  pink underline wavy;
+    font-size: 40px;
+}
+
+p{
+    text-align: left;
+    font-weight: bold;
+    line-height: 1.5;
+    font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; 
+}
