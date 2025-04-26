@@ -132,3 +132,9 @@ main p::selection {
 /* main p::selection {
     background-color: rgb(0, 255, 136);
 } */
+
+/* important */
+button {
+    background-color: #1100ff !important;
+    color: #ff0000 !important;
+}
