@@ -127,3 +127,8 @@ main p::first-line {
 main p::selection {
     background-color: orange;
 }
+
+/* Note that the cascade is important. The last rule will override the previous one.    */
+/* main p::selection {
+    background-color: rgb(0, 255, 136);
+} */
