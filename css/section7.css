@@ -112,3 +112,18 @@ a[href$="vn/" i] {
 .post:nth-of-type(2n) {
     background-color: #87b0c5;
 }
+
+/* psuedo elements */
+h2::first-letter {
+    font-size: 2em;
+    color: #6fc112;
+}
+
+main p::first-line {
+    font-weight: bold;
+    color: #c1121f;
+}
+
+main p::selection {
+    background-color: orange;
+}
