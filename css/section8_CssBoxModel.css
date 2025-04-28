@@ -2,8 +2,31 @@ div{
     width: 200px;
     height: 200px;
     background-color: lightblue;
+    border-width: 15px 5px 25px 5px;
+    border-color: red green blue yellow;
+    border-style: dotted solid double dashed;
+    padding: 5px;
 }
 
 h1{
     background-color: pink;
+}
+
+#one{
+    background-color: #cdb4db;
+    box-sizing: border-box;
+}
+
+#two{
+    background-color: #ffc8dd;
+    box-sizing: content-box;
+    border-radius: 20px;;
+    border-style: groove;
+}
+
+#three{
+    background-color: #a2d2ff;
+/* width | style | color     */
+    border: medium dashed #00ff22;
+    border-left-style: inset;
 }
