@@ -21,7 +21,7 @@ h1{
     background-color: #cdb4db;
     box-sizing: border-box;
     padding: 10px;
-    display: inline-block;
+    /* display: inline-block; */
 }
 
 #two{
@@ -29,7 +29,7 @@ h1{
     box-sizing: content-box;
     border-radius: 20px;;
     border-style: groove;
-    display: inline-block;
+    /* display: inline-block; */
     margin-top: 0px;
 }
 
@@ -38,7 +38,7 @@ h1{
 /* width | style | color     */
     border: medium dashed #00ff22;
     border-left-style: inset;
-    display: inline-block;
+    /* display: inline-block; */
     margin-top: 0px;
 }
 
@@ -46,5 +46,5 @@ button{
     /* vertical | horizontal */
     padding: 10px 20px;
     /* margin: 10px 20px; */
-    display: inline-block;
+    /* display: inline-block; */
 }
