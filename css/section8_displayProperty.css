@@ -1,4 +1,4 @@
-h1{
+.displayExample {
     background-color: rosybrown;
     border: 1px solid black;
     display: inline-block;
@@ -10,3 +10,47 @@ span{
     border: 2px solid rgb(4, 8, 233);
 }
 
+section{
+    background-color: lightcoral;
+    width: 800px;
+    height: 800px;
+}
+
+div{
+    background-color: lightblue;
+    width: 50%;
+    height: 50%;
+}
+
+h1{
+   font-size: 40px;
+   border: 1px solid black;
+   /* line-height: 200%; */
+}
+
+
+/* em's are relative units of measurement, so they are relative to the font size of the element they are used in. */
+
+article{
+    font-size: 20px;
+}
+
+h2{
+    font-size: 5em;
+    /* based on it's font size 2em now is 2em = 40px because it's lie inside article with font size is 20px , so 0.5 em = 40/2 = 20px  */
+    margin-left: 0.5em; 
+}
+
+h3{
+    font-size: 1.5em;
+}
+
+p{
+    font-size: 1em;
+}
+
+button{
+    font-size: 1em;
+    padding: 0 1em;
+    border-radius: 0.5em; 
+}
