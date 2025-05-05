@@ -21,3 +21,61 @@ section{
     opacity: 0.3; 
    
 }
+
+#static , #relative , #absolute, #fixed, #sticky{ 
+    background-color: white;
+}
+
+.position{
+    width: 100px;
+    height: 100px;
+    background-color: #3d405b;
+    border: 2px solid black;
+    margin: 10px;
+    display: inline-block;
+}
+
+#middle{
+    background-color: #81b29a;
+}
+
+#static #middle{
+    /* static position is not relative to the parent element. Top, bottom, left, right is  */
+    position: static;
+    top: 500px;
+}
+
+
+#relative #middle{
+    /* relative position is relative to the parent element. Top, bottom, left, right is  */
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+
+#absolute{
+    position: relative;
+}
+
+#absolute #middle{
+    /* absolute position is relative to the nearest positioned ancestor. Top, bottom, left, right is  */
+    position: absolute;
+    top: 200px;
+    left: 100px;
+}
+
+
+#fixed #middle{
+    /* fixed position is relative to the viewport. Top, bottom, left, right is  */
+    position: fixed;
+    top: 200px;
+    left: 100px;
+}
+
+#sticky #middle{
+    position: -webkit-sticky; /* Safari */ /* For old WebKit browsers */
+    position: sticky;
+    top: 100px;
+}
+
+
