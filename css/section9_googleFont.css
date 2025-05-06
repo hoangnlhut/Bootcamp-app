@@ -1,0 +1,16 @@
+body {
+    /* font-family: 'Tangerine', serif;
+    font-size: 48px;
+    text-shadow: 4px 4px 4px #03ffdd; */
+
+    font-family: 'Open Sans', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: italic;
+    font-variation-settings: 'wdth' 100;
+  }
+
+main {
+    width: 60%;
+    margin: 0 auto;
+}
