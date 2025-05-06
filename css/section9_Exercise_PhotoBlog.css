@@ -1,0 +1,20 @@
+h1{
+    width: 30%;
+    margin-left: calc(10%/6);
+    padding-bottom: 1%;
+    border-bottom: 1px solid rgb(71, 71, 71);
+}
+
+img{
+    width: 30%;
+    margin: calc(10%/6);
+}
+
+nav{
+    text-transform: uppercase;
+    font-family: "Raleway",sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: italic;
+}
+
