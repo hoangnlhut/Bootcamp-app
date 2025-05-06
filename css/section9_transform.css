@@ -1,6 +1,6 @@
 /* transform */
 
-h1{
+.sectionOne h1, .sectionTwo h1{
     background-color: #2a9d8f;
     border: 5px solid #000000;
     color: #eae2b7;
@@ -86,4 +86,25 @@ h1{
     transform: translateY(-10px);
     box-shadow: 0 0.5em 0.5em -0.4em #d0ff00;
     cursor: pointer;
+}
+
+
+/* All about background */
+#sectionBackground {
+    width: 80%;
+    height: 800px;
+    background-color: purple;
+    margin: 0 auto;
+}
+
+#sectionBackground h1{
+    font-size: 50px;
+
+    /* background is shorthand for all properties related to background */
+    /* background-image: url(../pictures/carUnplash.jpg);
+    background-size:  cover;
+    background-repeat: no-repeat; */
+
+    /* this is equivalent to below */
+    background: url(../pictures/carUnplash.jpg)  no-repeat center/40%, pink;    
 }
