@@ -52,3 +52,38 @@ h1{
     transform: translateX(10px) rotate(10deg) translateY(5px);
 }
 
+/* Fancy Button */
+#fancyButton{
+    background-color: #000000;
+    color: #eae2b7;
+    width: 800px;
+    height: 800px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: lighter;
+
+    /* 3 lines below to get item to the center */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#fancyButton > button{
+    /* 
+    background-color: #000000;
+    transition: 2s ; */
+    color: #ffa260;
+    background: none;
+    border: 2px solid ;
+    padding: 1em 2em;
+    font-size: 1em;
+    transition: 2s;
+}
+
+#fancyButton > button:hover{
+    border: 2px solid #d0ff00;
+    color: #d0ff00;
+    transform: translateY(-10px);
+    box-shadow: 0 0.5em 0.5em -0.4em #d0ff00;
+    cursor: pointer;
+}
