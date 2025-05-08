@@ -9,39 +9,45 @@ h1{
 #container{
     background-color: #003049;
     width: 90%;
-    height: 500px;
+    /* height: auto; */
     margin: 0 auto;
     border: 5px solid #003049;
     display: flex;
     flex-direction: row; /*  default value */
     justify-content: center; /* default value */
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     /* align-items: baseline; */
     align-items: flex-start;
     /* align-content: space-evenly; */
 }
 
 #container  div{
-    width: 100px;
+    width: 200px;
     height: 200px;
+    /* max-width: 300px; */
     text-align: center;
     font-size: 4em;
+    flex-basis: 600px;
+    /* flex-grow: 1; */
 }
 
 #item1{
     background-color: #80ffdb;
-    align-self: center;
+    /* align-self: center; */
+    /* flex-grow: 1; */
+    flex-shrink: 2;
 }
 
 #item2{
     background-color: #64dfdf;
-    align-self: flex-start;
+    /* align-self: flex-start; */
+    flex-shrink: 0;
 }
 
 #item3{
     background-color: #48bfe3;
     /* height: 300px !important; */
-    align-self: flex-end;
+    /* align-self: flex-end; */
 }
 
 #item4{
@@ -50,5 +56,6 @@ h1{
 
 #item5{
     background-color: #6930c3;
+    flex-grow: 2;
     /* height: 100px !important; */
 }
