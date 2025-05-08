@@ -1,0 +1,50 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1{
+    text-align: center;
+}
+
+#container{
+    background-color: #003049;
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    border: 5px solid #003049;
+    display: flex;
+    flex-direction: row; /*  default value */
+    justify-content: center; /* default value */
+    /* flex-wrap: wrap; */
+    /* align-items: baseline; */
+    align-items: flex-end;
+}
+
+#container  div{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    font-size: 4em;
+}
+
+#item1{
+    background-color: #80ffdb;
+}
+
+#item2{
+    background-color: #64dfdf;
+}
+
+#item3{
+    background-color: #48bfe3;
+    /* height: 300px !important; */
+}
+
+#item4{
+    background-color: #5390d9;
+}
+
+#item5{
+    background-color: #6930c3;
+    /* height: 100px !important; */
+}
