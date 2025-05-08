@@ -15,13 +15,14 @@ h1{
     display: flex;
     flex-direction: row; /*  default value */
     justify-content: center; /* default value */
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     /* align-items: baseline; */
-    align-items: flex-end;
+    align-items: flex-start;
+    /* align-content: space-evenly; */
 }
 
 #container  div{
-    width: 200px;
+    width: 100px;
     height: 200px;
     text-align: center;
     font-size: 4em;
@@ -29,15 +30,18 @@ h1{
 
 #item1{
     background-color: #80ffdb;
+    align-self: center;
 }
 
 #item2{
     background-color: #64dfdf;
+    align-self: flex-start;
 }
 
 #item3{
     background-color: #48bfe3;
     /* height: 300px !important; */
+    align-self: flex-end;
 }
 
 #item4{
