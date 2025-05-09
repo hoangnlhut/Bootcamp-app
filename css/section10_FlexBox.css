@@ -59,3 +59,22 @@ h1{
     flex-grow: 2;
     /* height: 100px !important; */
 }
+
+main{
+    width: 80%;
+    margin: 0 auto;
+    border: 5px solid black;
+    height: 500px;
+    display: flex;
+}
+
+main .sidebar{
+    background-color: orange;
+    flex: 1 300px;
+    
+}
+
+main .maincontent{
+    background-color: lightblue;
+    flex: 2 800px;
+}
