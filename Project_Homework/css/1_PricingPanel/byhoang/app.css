@@ -1,0 +1,167 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+
+    width: 100%;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+:root {
+    --main-body-color: rgb(0, 140, 255);
+    --box-shadow-main: rgb(0, 103, 187);
+    --btn-grey: #EFEFEF;
+    --pricing-header-color: gray;
+    --gray00: #ffffff;
+    --gray05: #f5f6f7;
+    --gray10: #dfdfe2;
+    --gray15: #d0d0d5;
+    --gray45: #858591;
+    --gray75: #3b3b4f;
+    --gray85: #2a2a40;
+}
+
+body{
+    background-color: var(--main-body-color);
+}
+
+.panel{
+    display: flex;
+    margin: 100px auto;
+    background-color: white;
+    width: 90%;
+    border-radius: 5px;
+    box-shadow: 10px 5px 5px var(--box-shadow-main);
+    padding: 10px;
+    text-align: center;
+}
+
+.pricing-plan{
+    width: 33%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid var(--gray05);
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.pricing-plan:last-child{
+    border-right: none;
+}
+
+.pricing-img{
+   width: 60%;
+   height: 100%;
+}
+
+.pricing-features, .pricing-price, .pricing-button{
+    color: var(--main-body-color);
+    font-weight: bold;
+}
+
+.pricing-features{
+    width: 70%;
+    font-size: 1em;
+}
+
+.pricing-features-item{
+    padding: 10px 0;
+    border-bottom: 1px solid var(--gray05);
+    
+}
+
+.pricing-header{
+    font-weight: bold;
+    color: var(--pricing-header-color);
+    padding: 20px 0 30px;
+    border-bottom: 1px solid var(--gray05);
+}
+
+.pricing-price{
+    font-size: 2em;
+    padding: 20px 0;
+}
+
+.pricing-button{
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    border: 1px solid var(--main-body-color);
+    width: 40%;
+}
+
+.pricing-plan:nth-of-type(even) a {
+    background-color: var(--main-body-color);
+    color: white;
+}
+
+
+@media screen and (max-width: 640px) {
+    .panel {
+        flex-direction: column;
+        width: 500px;
+        margin: 30px auto;
+    }
+
+    .pricing-plan {
+        width: 95%;
+        border-right: none;
+        border-bottom: 1px solid var(--gray15);
+        padding-bottom: 2em;
+    }
+
+    .pricing-plan:last-child {
+        border-bottom: none;
+    }
+
+    .pricing-img {
+        width: 80%;
+    }
+}
