@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <link rel="stylesheet" href="app.css" />
+    <script src="/library/jquery-3.7.1.min.js"></script>
+  </head>
+  <body>
+    <button type="button" id="grow">Grow</button>
+    <button type="button" id="move">Move</button>
+    <button type="button" id="bigger">Bigger</button>
+    <button type="button" id="many-things">Many Things</button>
+    <div id="textBox" style="position: relative; left: 10px; top: 10px">
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae enim
+        similique dolore voluptatem quia magni recusandae dolor cumque,
+        temporibus sint fugiat inventore rerum, amet rem excepturi, error
+        mollitia ducimus quod?
+      </p>
+    </div>
+
+    <button type="button" id="clickme">Click here</button>
+    <img
+      id="book"
+      src="book.png"
+      alt=""
+      width="100"
+      height="123"
+      style="position: relative; left: 10px"
+    />
+
+    <script>
+      $(document).ready(function () {
+        $("#grow").click(function () {
+          $("#textBox").animate({ opacity: 0.25 });
+        });
+
+        $("#move").click(function () {
+          $("#textBox").animate({ top: "+=50" });
+        });
+
+        $("#bigger").click(function () {
+          $("#textBox").animate({ fontSize: "3em" });
+        });
+
+        $("#many-things").click(function () {
+          $("#grow").add("#move").add("#bigger").trigger("click");
+        });
+
+        $("#clickme").click(function () {
+          $("#book").animate({ left: "+=50" });
+        });
+      });
+    </script>
+  </body>
+</html>
