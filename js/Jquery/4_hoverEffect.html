@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Handling Event</title>
+    <link rel="stylesheet" href="app.css" />
+    <script src="/library/jquery-3.7.1.min.js"></script>
+  </head>
+  <body>
+    <ul>
+      <li>Milk</li>
+      <li>Bread</li>
+      <li class="fade">Chips</li>
+      <li class="fade">Socks</li>
+    </ul>
+
+    <h2>Hide or show a paragrap</h2>
+
+    <p id="textboxNew">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae enim
+      similique dolore voluptatem quia magni recusandae dolor cumque, temporibus
+      sint fugiat inventore rerum, amet rem excepturi, error mollitia ducimus
+      quod?
+    </p>
+
+    <h2>Using Toggle Class</h2>
+    <div>
+      <span id="minorPara">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </span>
+      Accusamus et quam mollitia consectetur cum at ex tempore numquam rem
+      repellendus adipisci enim aut aperiam veniam modi, rerum, ullam
+      consequatur dolore!
+    </div>
+
+    <script>
+      // Bind one or two handlers to the matched elements, to be executed when the mouse pointer enters and leaves the elements.
+      //Calling $( selector ).hover( handlerIn, handlerOut ) is shorthand for:  $( selector ).on( "mouseenter", handlerIn ).on( "mouseleave", handlerOut );
+
+      function handlerIn() {
+        $(this).append($("<span> ***</span>")); //handlerIn
+      }
+
+      function handlerOut() {
+        $(this).find("span").last().remove(); //handlerOut
+      }
+
+      $("li").hover(handlerIn, handlerOut);
+
+      $("li.fade").hover(function () {
+        $(this).fadeOut(100);
+        $(this).fadeIn(500);
+      });
+
+      //   example 2 : hide or show paragrapgh
+      function hideText() {
+        $("#textboxNew").hide();
+      }
+
+      function showText() {
+        $("#textboxNew").show();
+      }
+      $("#textboxNew").hover(hideText, showText);
+
+      // example 3 : change paragraph color on hover
+      $("div #minorPara").hover(function () {
+        $(this).toggleClass("highlight");
+      });
+    </script>
+  </body>
+</html>

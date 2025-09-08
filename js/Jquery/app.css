@@ -14,7 +14,7 @@
     margin: 20px;
 }
 
-
+/* Selector section */
 .selectorOrangeColor{
     color: orange;
     font-size: 50px;
@@ -26,6 +26,9 @@
     margin: 10px;
 }
 
+/*End of Selector section */
+
+/* Handling Event */
 #textbox{
     width: 300px;
     height: 50px;
@@ -33,3 +36,30 @@
     margin: 20px;
     padding: 10px;
 }
+/*End of Handling Event */
+
+/*Hover Effects*/
+ul {
+    margin-left: 20px;
+    color: blue;
+}
+
+li {
+    cursor: default;
+}
+
+span {
+    color: red;
+}
+
+.highlight {
+    background-color: yellow;
+}
+
+
+/*End of Hover Effects*/
+
+
+/*  */
+
+/*End of  */
