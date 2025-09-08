@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Handling Event</title>
+    <link rel="stylesheet" href="app.css" />
+    <script src="/library/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript">
+      function whenMouseIsClicked() {
+        $("#textbox").html("Text box clicked");
+      }
+
+      function whenMouseLeaves() {
+        $("#textbox").html("Mouse left the textbox");
+      }
+
+      $(document).ready(function () {
+        $(".target").on("change", function () {
+          const value = $("input").val(); // can use $(this).val() also
+          alert(`Handler for ${value} called.`);
+        });
+
+        $("#other").on("click", function () {
+          $(".target").trigger("change");
+        });
+
+        //handle text box input event
+        $("#textbox").on("click", whenMouseIsClicked);
+        $("#textbox").on("mouseleave", whenMouseLeaves);
+
+        // Can you see reference in https://api.jquery.com/category/events/
+      });
+    </script>
+  </head>
+  <body>
+    <form>
+      <input class="target" type="text" value="Field 1" />
+      <select class="target">
+        <option value="option1" selected="selected">Option 1</option>
+        <option value="option2">Option 2</option>
+      </select>
+    </form>
+    <div id="other">Trigger the handler</div>
+
+    <div id="textbox"></div>
+  </body>
+</html>
