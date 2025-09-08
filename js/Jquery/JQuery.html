@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JQuery Journey</title>
+    <!-- jQuery CDN or we can download in locally -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+    <script src="/library/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <h1>Welcoming JQUery Journey</h1>
+    <div id="circle"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <!-- <script src="script.js"></script> -->
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("body")
+          .append("<h2>JQuery is ready to use</h2>")
+          .append("<p>This is a paragraph</p>");
+      });
+    </script>
+  </body>
+</html>
