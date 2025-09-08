@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selector</title>
+    <link rel="stylesheet" href="app.css" />
+    <script src="/library/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("div.second").replaceWith("<h1>Replaced</h1>");
+
+        $("<h2>New Replace All</h2>").replaceAll(".inner");
+
+        // or you can using html() method to replace content
+        $("#four").html("<h3>Replaced by html() method</h3>");
+      });
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="inner first">Hello</div>
+      <div class="inner second">And</div>
+      <div class="inner third">Goodbye</div>
+      <div id="four">Goodbye</div>
+    </div>
+  </body>
+</html>
