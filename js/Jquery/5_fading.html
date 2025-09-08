@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Handling Event</title>
+    <link rel="stylesheet" href="app.css" />
+    <script src="/library/jquery-3.7.1.min.js"></script>
+  </head>
+  <body>
+    <div>
+      <span>Lorem ipsum dolor</span> sit amet consectetur adipisicing elit.
+      Perspiciatis nihil qui quisquam voluptates optio nulla odio explicabo
+      quaerat similique quae sed <span>illo beatae enim facilis</span>,
+      molestias architecto. Suscipit, totam iure!
+    </div>
+
+    <h2>Fading In and Out</h2>
+    <button id="fadeIn" type="button">Fade In</button>
+    <button id="fadeOut" type="button">Fade Out</button>
+
+    <script>
+      $("span").hover(function () {
+        $(this).fadeOut(1000, function () {
+          alert("Faded out and removed.");
+          $(this).remove();
+        });
+      });
+
+      $("#fadeIn").click(function () {
+        $("div").fadeIn(3000, function () {
+          alert("Faded In");
+        });
+      });
+
+      $("#fadeOut").click(function () {
+        $("div").fadeOut("fast", function () {
+          alert("Faded Out");
+        });
+      });
+    </script>
+  </body>
+</html>
