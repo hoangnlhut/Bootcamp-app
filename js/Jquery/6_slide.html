@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slide</title>
+    <link rel="stylesheet" href="app.css" />
+    <script src="/library/jquery-3.7.1.min.js"></script>
+  </head>
+  <body>
+    <!-- 1. .slideDown(): Display the matched elements with a sliding motion. 2.
+    2. .slideUp(): Hide the matched elements with a sliding motion. 3.
+    3. .slideToggle(): Display or hide the matched elements with a sliding motion.
+    https://api.jquery.com/category/effects/sliding/
+    -->
+    <button id="slide-up" type="button">Slide Up</button>
+    <button id="slide-down" type="button">Slide Down</button>
+    <button id="slide-toggle" type="button">Toggle</button>
+
+    <div id="textBox">
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae enim
+        similique dolore voluptatem quia magni recusandae dolor cumque,
+        temporibus sint fugiat inventore rerum, amet rem excepturi, error
+        mollitia ducimus quod?
+      </p>
+
+    <script>
+      $(document).ready(function () {
+        $("#slide-up").click(function () {
+          $("#textBox").slideUp("2000", "linear");
+        });
+
+        $("#slide-down").click(function () {
+          $("#textBox").slideDown("2000", "linear");
+        });
+
+        $("#slide-toggle").click(function () {
+          $("#textBox").slideToggle("2000", function () {
+            alert("Slide Toggle Completed");
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
