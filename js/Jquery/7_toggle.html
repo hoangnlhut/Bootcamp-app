@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toggle</title>
+    <link rel="stylesheet" href="app.css" />
+    <script src="/library/jquery-3.7.1.min.js"></script>
+  </head>
+  <body>
+    <button type="button" id="toogleMe">Toggle</button>
+    <div id="textBox">
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae enim
+        similique dolore voluptatem quia magni recusandae dolor cumque,
+        temporibus sint fugiat inventore rerum, amet rem excepturi, error
+        mollitia ducimus quod?
+      </p>
+
+    <script>
+        $(document).ready(function(){
+            $("#toogleMe").click(function(){
+                $("#textBox").toggle(2000, "swing");
+            });
+        });
+    </script>
+  </body>
+</html>
