@@ -55,13 +55,14 @@ span {
 .highlight {
     background-color: yellow;
 }
-
-
 /*End of Hover Effects*/
 
-/* Fading  */
 
-/*End of Fading */
+/*   */
+h1 + h2{
+    
+}
+/*End of  */
 
 
 /*  */

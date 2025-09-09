@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creating Content</title>
+    <link rel="stylesheet" href="app.css" />
+    <script src="/library/jquery-3.7.1.min.js"></script>
+  </head>
+  <body>
+    <p>
+      0. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam beatae
+      nobis ducimus, error omnis suscipit nihil numquam pariatur facilis id
+      provident aut assumenda cupiditate enim ipsam expedita, repellendus, quo
+      natus!
+    </p>
+    <p>
+      1. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam beatae
+      nobis ducimus, error omnis suscipit nihil numquam pariatur facilis id
+      provident aut assumenda cupiditate enim ipsam expedita, repellendus, quo
+      natus!
+    </p>
+    <p>
+      2. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam beatae
+      nobis ducimus, error omnis suscipit nihil numquam pariatur facilis id
+      provident aut assumenda cupiditate enim ipsam expedita, repellendus, quo
+      natus hoang!
+    </p>
+    <p>
+      3. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam beatae
+      nobis ducimus, error omnis suscipit nihil numquam pariatur facilis id
+      provident aut assumenda cupiditate enim ipsam expedita, repellendus, quo
+      natus!
+    </p>
+    <section>
+      <h2>This is a section AAAAAAAAA</h2>
+      <div>
+        <p id="pInDivInSection">
+          0. <strong>pInDivInSection</strong> ipsum, dolor sit amet consectetur
+          adipisicing elit. Quam beatae nobis ducimus, error omnis suscipit
+          nihil numquam pariatur facilis id provident aut assumenda cupiditate
+          enim ipsam expedita, repellendus, quo natus!
+        </p>
+      </div>
+    </section>
+    <script>
+      $(document).ready(function () {
+        $("p:first").after("<h2>This is a new heading</h2>");
+        $("p").last().before("<h3>This is another heading</h3>");
+        $("p:odd").append(" <strong>Appended text</strong>");
+        $("p:odd").prepend(" <strong style='color: red'>Prepend text</strong>");
+        $("p:first-child").css("color", "red");
+        $("p:last-of-type").css("color", "blue");
+
+        $("p:contains('hoang')").css("color", "green");
+
+        $("p:parent").after(
+          "<h3>This is a new heading 3 after pInDivInSection</h3>"
+        );
+      });
+    </script>
+  </body>
+</html>
