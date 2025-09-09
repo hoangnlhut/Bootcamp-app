@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selector And Filter</title>
+    <link rel="stylesheet" href="app.css" />
+    <script src="/library/jquery-3.7.1.min.js"></script>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+      distinctio deleniti nisi sint quidem repellendus alias eius reiciendis
+      iste perferendis aut, maiores eligendi dolores hic suscipit rerum officiis
+      illo impedit?
+    </p>
+    <p id="headerTop">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+      distinctio deleniti nisi sint quidem repellendus alias eius reiciendis
+      iste perferendis aut, maiores eligendi dolores hic suscipit rerum officiis
+      illo impedit?
+    </p>
+    <p class="greenBorder">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+      distinctio deleniti nisi sint quidem repellendus alias eius reiciendis
+      iste perferendis aut, maiores eligendi dolores hic suscipit rerum officiis
+      illo impedit?
+    </p>
+    <p class="hoang">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+      distinctio deleniti nisi sint quidem repellendus alias eius reiciendis
+      iste perferendis aut, maiores eligendi dolores hic suscipit rerum officiis
+      illo impedit?
+    </p>
+    <script>
+      $(document).ready(function () {
+        // Select by tag name
+        $("p").css("background-color", "lightblue");
+
+        // Select by ID
+        $("#headerTop").css({ "font-weight": "bold", color: "orange" });
+
+        // Select by class
+        $(".greenBorder").css("border", "2px dashed blue");
+
+        //filter
+        $("p:first").css("font-size", "40px");
+        $("p:last").css("border-radius", "20px");
+        $("p:odd").css({
+          "border-radius": "30%",
+          "background-color": "yellow",
+        });
+      });
+    </script>
+  </body>
+</html>
