@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced selector</title>
+    <link rel="stylesheet" href="app.css" />
+    <script src="/library/jquery-3.7.1.min.js"></script>
+  </head>
+  <body>
+    <p>
+      1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, quos.
+      Adipisci cumque, amet laboriosam quasi inventore ullam! Sapiente ullam
+      saepe unde placeat odit perferendis sunt, reprehenderit eius rerum
+      delectus nulla.
+    </p>
+    <p>
+      2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, quos.
+      Adipisci cumque, amet laboriosam quasi inventore ullam! Sapiente ullam
+      saepe unde placeat odit perferendis sunt, reprehenderit eius rerum
+      delectus nulla.
+    </p>
+    <div>
+      <p>
+        3. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, quos.
+        Adipisci cumque, amet laboriosam quasi inventore ullam! Sapiente ullam
+        saepe unde placeat odit perferendis sunt, reprehenderit eius rerum
+        delectus nulla.
+      </p>
+      <p>
+        4. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, quos.
+        Adipisci cumque, amet laboriosam quasi inventore ullam! Sapiente ullam
+        saepe unde placeat odit perferendis sunt, reprehenderit eius rerum
+        delectus nulla.
+      </p>
+      <p>
+        5. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, quos.
+        Adipisci cumque, amet laboriosam quasi inventore ullam! Sapiente ullam
+        saepe unde placeat odit perferendis sunt, reprehenderit eius rerum
+        delectus nulla.
+      </p>
+      <p>
+        6. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, quos.
+        Adipisci cumque, amet laboriosam quasi inventore ullam! Sapiente ullam
+        saepe unde placeat odit perferendis sunt, reprehenderit eius rerum
+        delectus nulla.
+      </p>
+
+      <section>
+        <p>
+          7. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+          perferendis, dolorum odit quas, aut quaerat modi tempora nulla
+          repudiandae, culpa totam non consequatur! Nemo nobis aliquam quis
+          beatae ea laboriosam!
+        </p>
+        <p class="unique">
+          8. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+          perferendis, dolorum odit quas, aut quaerat modi tempora nulla
+          repudiandae, culpa totam non consequatur! Nemo nobis aliquam quis
+          beatae ea laboriosam!
+        </p>
+      </section>
+    </div>
+
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+
+    <script>
+      $(document).ready(function () {
+        $("div > p").css("background-color", "green");
+
+        $("div p").css("color", "red");
+
+        $("div p.unique").css("color", "purple");
+
+        // Next-sibling Combinator (+): This combinator selects an element that immediately follows a specified sibling element.
+        $("h1 + h2").css("border", "2px solid blue");
+      });
+    </script>
+  </body>
+</html>
