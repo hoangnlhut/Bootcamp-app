@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modifying CSS</title>
+    <link rel="stylesheet" href="app.css" />
+    <script src="/library/jquery-3.7.1.min.js"></script>
+  </head>
+  <body>
+    <!-- https://api.jquery.com/category/manipulation/class-attribute/ -->
+    <h1>Manipulation class Attribute</h1>
+    <button type="button" id="addClass">Add Class</button>
+    <button type="button" id="hasClass">Has Class</button>
+    <button type="button" id="removeClass">Remove Class</button>
+    <button type="button" id="toggle">Toggle Class</button>
+
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat cum
+      temporibus labore quae ipsa nostrum obcaecati maxime recusandae, fugiat
+      error harum commodi vero quod expedita nesciunt dolores accusamus sapiente
+      nobis?
+    </p>
+    <script>
+      $(document).ready(function () {
+        $("#addClass").click(function () {
+          $("p").addClass("addColorRed");
+        });
+
+        $("#hasClass").click(function () {
+          if ($("p").hasClass("addColorRed")) {
+            alert("Paragraph has class 'addColorRed'");
+          } else {
+            alert("Paragraph does not have class 'addColorRed'");
+          }
+        });
+
+        $("#removeClass").click(function () {
+          $("p").removeClass("addColorRed");
+        });
+
+        $("#toggle").click(function () {
+          $("p").toggleClass("addColorRed");
+        });
+      });
+    </script>
+  </body>
+</html>

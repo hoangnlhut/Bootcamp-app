@@ -58,11 +58,15 @@ span {
 /*End of Hover Effects*/
 
 
-/*   */
-h1 + h2{
-    
+/* Category: Class Attribute:Ladd, remove, hasClass, toogle */
+
+.addColorRed{
+    color: red;
 }
-/*End of  */
+
+
+
+/*End of Category: Class Attribute */
 
 
 /*  */
